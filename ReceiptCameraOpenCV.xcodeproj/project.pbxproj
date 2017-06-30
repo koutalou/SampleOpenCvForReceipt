@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2709F73F1F049BB9009DF93A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2709F73E1F049BB9009DF93A /* AppDelegate.swift */; };
+		2709F7411F049BB9009DF93A /* ReceiptCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2709F7401F049BB9009DF93A /* ReceiptCameraViewController.swift */; };
+		2709F7441F049BB9009DF93A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2709F7421F049BB9009DF93A /* Main.storyboard */; };
+		2709F7461F049BB9009DF93A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2709F7451F049BB9009DF93A /* Assets.xcassets */; };
+		2709F7491F049BB9009DF93A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2709F7471F049BB9009DF93A /* LaunchScreen.storyboard */; };
+		2709F7521F04BF47009DF93A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2709F7511F04BF47009DF93A /* AVFoundation.framework */; };
+		2709F7561F04D273009DF93A /* ModifiedCaptureImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2709F7551F04D273009DF93A /* ModifiedCaptureImage.mm */; };
+		2709F75C1F04D90F009DF93A /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2709F7571F04D7DE009DF93A /* opencv2.framework */; };
+		F2208889F80C32F9CC229E18 /* Pods_ReceiptCameraOpenCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9742935AA62504790C03D7B /* Pods_ReceiptCameraOpenCV.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		240CFDA1F51E988881CB920E /* Pods-ReceiptCameraOpenCV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReceiptCameraOpenCV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReceiptCameraOpenCV/Pods-ReceiptCameraOpenCV.debug.xcconfig"; sourceTree = "<group>"; };
+		2709F73B1F049BB9009DF93A /* ReceiptCameraOpenCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptCameraOpenCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2709F73E1F049BB9009DF93A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2709F7401F049BB9009DF93A /* ReceiptCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptCameraViewController.swift; sourceTree = "<group>"; };
+		2709F7431F049BB9009DF93A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2709F7451F049BB9009DF93A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2709F7481F049BB9009DF93A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2709F74A1F049BB9009DF93A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2709F7511F04BF47009DF93A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2709F7531F04D273009DF93A /* ReceiptCameraOpenCV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReceiptCameraOpenCV-Bridging-Header.h"; sourceTree = "<group>"; };
+		2709F7541F04D273009DF93A /* ModifiedCaptureImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifiedCaptureImage.h; sourceTree = "<group>"; };
+		2709F7551F04D273009DF93A /* ModifiedCaptureImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ModifiedCaptureImage.mm; sourceTree = "<group>"; };
+		2709F7571F04D7DE009DF93A /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "../../Library/Developer/Xcode/DerivedData/ReceiptCameraOpenCV-bvmndickvrctordhrtmkhrlmleoj/Build/Products/Debug-iphoneos/OpenCV/opencv2.framework"; sourceTree = "<group>"; };
+		2709F7591F04D853009DF93A /* libopencv2Static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv2Static.a; path = Pods/OpenCV/ios/libopencv2Static.a; sourceTree = "<group>"; };
+		D7604B99218FF35AD6C96914 /* Pods-ReceiptCameraOpenCV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReceiptCameraOpenCV.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReceiptCameraOpenCV/Pods-ReceiptCameraOpenCV.release.xcconfig"; sourceTree = "<group>"; };
+		D9742935AA62504790C03D7B /* Pods_ReceiptCameraOpenCV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReceiptCameraOpenCV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2709F7381F049BB9009DF93A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2709F75C1F04D90F009DF93A /* opencv2.framework in Frameworks */,
+				2709F7521F04BF47009DF93A /* AVFoundation.framework in Frameworks */,
+				F2208889F80C32F9CC229E18 /* Pods_ReceiptCameraOpenCV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2709F7321F049BB9009DF93A = {
+			isa = PBXGroup;
+			children = (
+				2709F73D1F049BB9009DF93A /* ReceiptCameraOpenCV */,
+				2709F73C1F049BB9009DF93A /* Products */,
+				2709F7501F04BF47009DF93A /* Frameworks */,
+				3F90355616E9E7EDB96BE4B8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		2709F73C1F049BB9009DF93A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2709F73B1F049BB9009DF93A /* ReceiptCameraOpenCV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2709F73D1F049BB9009DF93A /* ReceiptCameraOpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				2709F73E1F049BB9009DF93A /* AppDelegate.swift */,
+				2709F7401F049BB9009DF93A /* ReceiptCameraViewController.swift */,
+				2709F7541F04D273009DF93A /* ModifiedCaptureImage.h */,
+				2709F7551F04D273009DF93A /* ModifiedCaptureImage.mm */,
+				2709F7421F049BB9009DF93A /* Main.storyboard */,
+				2709F7451F049BB9009DF93A /* Assets.xcassets */,
+				2709F7471F049BB9009DF93A /* LaunchScreen.storyboard */,
+				2709F74A1F049BB9009DF93A /* Info.plist */,
+				2709F7531F04D273009DF93A /* ReceiptCameraOpenCV-Bridging-Header.h */,
+			);
+			path = ReceiptCameraOpenCV;
+			sourceTree = "<group>";
+		};
+		2709F7501F04BF47009DF93A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2709F7591F04D853009DF93A /* libopencv2Static.a */,
+				2709F7571F04D7DE009DF93A /* opencv2.framework */,
+				2709F7511F04BF47009DF93A /* AVFoundation.framework */,
+				D9742935AA62504790C03D7B /* Pods_ReceiptCameraOpenCV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F90355616E9E7EDB96BE4B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				240CFDA1F51E988881CB920E /* Pods-ReceiptCameraOpenCV.debug.xcconfig */,
+				D7604B99218FF35AD6C96914 /* Pods-ReceiptCameraOpenCV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2709F73A1F049BB9009DF93A /* ReceiptCameraOpenCV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2709F74D1F049BB9009DF93A /* Build configuration list for PBXNativeTarget "ReceiptCameraOpenCV" */;
+			buildPhases = (
+				AA64D8350E58910869BED24C /* [CP] Check Pods Manifest.lock */,
+				2709F7371F049BB9009DF93A /* Sources */,
+				2709F7381F049BB9009DF93A /* Frameworks */,
+				2709F7391F049BB9009DF93A /* Resources */,
+				E96C7220786A12118C503460 /* [CP] Embed Pods Frameworks */,
+				95DFD25F242EDD2C383F1994 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReceiptCameraOpenCV;
+			productName = ReceiptCameraOpenCV;
+			productReference = 2709F73B1F049BB9009DF93A /* ReceiptCameraOpenCV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2709F7331F049BB9009DF93A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = koutalou;
+				TargetAttributes = {
+					2709F73A1F049BB9009DF93A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = ETCRPHYQG4;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2709F7361F049BB9009DF93A /* Build configuration list for PBXProject "ReceiptCameraOpenCV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2709F7321F049BB9009DF93A;
+			productRefGroup = 2709F73C1F049BB9009DF93A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2709F73A1F049BB9009DF93A /* ReceiptCameraOpenCV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2709F7391F049BB9009DF93A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2709F7491F049BB9009DF93A /* LaunchScreen.storyboard in Resources */,
+				2709F7461F049BB9009DF93A /* Assets.xcassets in Resources */,
+				2709F7441F049BB9009DF93A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95DFD25F242EDD2C383F1994 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReceiptCameraOpenCV/Pods-ReceiptCameraOpenCV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA64D8350E58910869BED24C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E96C7220786A12118C503460 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReceiptCameraOpenCV/Pods-ReceiptCameraOpenCV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2709F7371F049BB9009DF93A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2709F7561F04D273009DF93A /* ModifiedCaptureImage.mm in Sources */,
+				2709F7411F049BB9009DF93A /* ReceiptCameraViewController.swift in Sources */,
+				2709F73F1F049BB9009DF93A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2709F7421F049BB9009DF93A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2709F7431F049BB9009DF93A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2709F7471F049BB9009DF93A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2709F7481F049BB9009DF93A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2709F74B1F049BB9009DF93A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2709F74C1F049BB9009DF93A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2709F74E1F049BB9009DF93A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 240CFDA1F51E988881CB920E /* Pods-ReceiptCameraOpenCV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = ETCRPHYQG4;
+				INFOPLIST_FILE = ReceiptCameraOpenCV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/OpenCV/ios",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.moneyforward.ReceiptCameraOpenCV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReceiptCameraOpenCV/ReceiptCameraOpenCV-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2709F74F1F049BB9009DF93A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7604B99218FF35AD6C96914 /* Pods-ReceiptCameraOpenCV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = ETCRPHYQG4;
+				INFOPLIST_FILE = ReceiptCameraOpenCV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/OpenCV/ios",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.moneyforward.ReceiptCameraOpenCV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReceiptCameraOpenCV/ReceiptCameraOpenCV-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2709F7361F049BB9009DF93A /* Build configuration list for PBXProject "ReceiptCameraOpenCV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2709F74B1F049BB9009DF93A /* Debug */,
+				2709F74C1F049BB9009DF93A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2709F74D1F049BB9009DF93A /* Build configuration list for PBXNativeTarget "ReceiptCameraOpenCV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2709F74E1F049BB9009DF93A /* Debug */,
+				2709F74F1F049BB9009DF93A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2709F7331F049BB9009DF93A /* Project object */;
+}
